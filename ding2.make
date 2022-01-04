@@ -41,15 +41,7 @@ projects[cs_adaptive_image][subdir] = "contrib"
 projects[cs_adaptive_image][version] = "1.0"
 
 projects[ctools][subdir] = "contrib"
-projects[ctools][version] = "1.9"
-; Fix regression. See https://www.drupal.org/node/2209775
-projects[ctools][patch][] = "https://www.drupal.org/files/issues/ctools-readd_access_callback_params-2209775-24.patch"
-; Fix PHP7 errors - PHP 4 style constructors - https://www.drupal.org/node/2528736
-projects[ctools][patch][] = "https://www.drupal.org/files/issues/deprecating_php4_style-2528736-23.patch"
-; PHP7 - Uniform Variable Syntax updates are causing exported pages to not have names.
-projects[ctools][patch][] = "https://www.drupal.org/files/issues/ctools-uniform-variable-syntax-2635876-6.patch"
-; Check for jQuery differences regarding prop() vs attr().
-projects[ctools][patch][] = "https://git.drupalcode.org/project/ctools/commit/18385421a277097d8a92672808f656cc7470b69d.patch"
+projects[ctools][version] = "1.10"
 
 projects[customerror][subdir] = "contrib"
 projects[customerror][version] = "1.4"
@@ -99,6 +91,7 @@ projects[entityreference_filter][version] = "1.7"
 
 projects[eu_cookie_compliance][subdir] = "contrib"
 projects[eu_cookie_compliance][version] = "1.28"
+projects[eu_cookie_compliance][patch][] = "patches/eu_cookie_compliance-better-script-key-matching.patch"
 
 projects[environment_indicator][subdir] = "contrib"
 projects[environment_indicator][version] = "2.8"

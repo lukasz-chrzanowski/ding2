@@ -1,0 +1,16 @@
+diff --git a/eu_cookie_compliance.module b/eu_cookie_compliance.module
+index 05781d2..b24ca25 100644
+--- a/eu_cookie_compliance.module
++++ b/eu_cookie_compliance.module
+@@ -574,7 +574,10 @@ function eu_cookie_compliance_js_alter(&$javascript) {
+     foreach ($disabled_javascripts as $script) {
+       // Parse the string and drop the parameter that is a behavior name.
+       @list($script, $attach_name) = explode('|', $script);
+-      unset($javascript[$script]);
++      $script_key = file_create_url($script);
++      if (!empty($javascript[$script_key])) {
++        unset($javascript[$script_key]);
++      }
+     }
+   }
+ }
