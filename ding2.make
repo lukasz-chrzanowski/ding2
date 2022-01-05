@@ -121,12 +121,16 @@ projects[field_group][patch][] = "https://www.drupal.org/files/issues/php7_unifo
 projects[file_entity][subdir] = "contrib"
 projects[file_entity][version] = "2.0-beta3"
 
+; TODO: Investigate if we can upgrade to a newer major version.
+; Right now by upgrading to 3.9 a PHP exception about a missing class
+; is thrown. It might have to do with auto loading not being supported.
 projects[flag][subdir] = "contrib"
 projects[flag][version] = "2.2"
 
 projects[fontyourface][subdir] = "contrib"
 projects[fontyourface][version] = "2.7"
 
+; TODO: Investigate if we can use a stable version instead.
 projects[formblock][type] = "module"
 projects[formblock][subdir] = "contrib"
 projects[formblock][download][type] = "git"
@@ -194,7 +198,7 @@ projects[link][patch][] = "https://www.drupal.org/files/issues/link_module_displ
 
 projects[l10n_update][type] = "module"
 projects[l10n_update][subdir] = "contrib"
-projects[l10n_update][version] = "1.2"
+projects[l10n_update][version] = "2.6"
 
 projects[l10n_client][type] = "module"
 projects[l10n_client][subdir] = "contrib"
@@ -225,9 +229,7 @@ projects[maintenance_mode_api][subdir] = "contrib"
 projects[maintenance_mode_api][version] = "1.0-beta1"
 
 projects[media][subdir] = "contrib"
-projects[media][version] = "2.0"
-; Patch against SA-CONTRIB-2018-020
-projects[media][patch][] = "https://cgit.drupalcode.org/media/patch/?id=1cd77ffa9c2cf96d80b76d47318179a8a82f0d46"
+projects[media][version] = "2.27"
 
 projects[media_vimeo][subdir] = "contrib"
 projects[media_vimeo][version] = "2.1"
@@ -312,11 +314,16 @@ projects[override_node_options][version] = "1.13"
 projects[pagepreview][subdir] = "contrib"
 projects[pagepreview][version] = "1.0-alpha1"
 
+; TODO: Investigate if we can use a stable version instead.
+; If we upgrade to 3.10 it breaks pages.
 projects[panels][subdir] = "contrib"
 projects[panels][version] = "3.4"
 ; Fix PHP7 errors - PHP 4 style constructors - (https://www.drupal.org/node/2557061)
 projects[panels][patch][] = "https://www.drupal.org/files/issues/deprecated-constructor-in-php-7-2557061-3.patch"
 
+; TODO: Investigate if we upgrade.
+; Right now it is untouched because of the locked version of panels (see above).
+; This combination (panels+panels_breadcrumbs) we know works.
 projects[panels_breadcrumbs][subdir] = "contrib"
 projects[panels_breadcrumbs][version] = "2.1"
 
@@ -354,6 +361,7 @@ projects[rules][version] = "2.7"
 projects[scheduler][subdir] = "contrib"
 projects[scheduler][version] = "1.5"
 
+; TODO: Investigate if we can use a stable version instead.
 ; Patched with "Secure Permissions fails with features and multilingual"
 projects[secure_permissions][type] = "module"
 projects[secure_permissions][subdir] = "contrib"
@@ -399,11 +407,8 @@ projects[token][version] = "1.6"
 projects[transliteration][subdir] = "contrib"
 projects[transliteration][version] = "3.2"
 
-; Using dev release, as the "stable" version is making errors in the install profile.
 projects[uuid][subdir] = "contrib"
-projects[uuid][download][type] = "git"
-projects[uuid][download][url] = "http://git.drupal.org/project/uuid.git"
-projects[uuid][download][revision] = "3f4d9fb"
+projects[uuid][version] = "1.3"
 
 projects[variable][subdir] = "contrib"
 projects[variable][version] = "2.5"
@@ -431,6 +436,7 @@ projects[views_responsive_grid][version] = "1.3"
 projects[views_rss][subdir] = "contrib"
 projects[views_rss][version] = "2.0-rc4"
 
+; TODO: Investigate if this can be changed to stable version.
 ; This specific checkout is only because of the module is dev branch only.
 projects[views_rss_media][type] = "module"
 projects[views_rss_media][subdir] = "contrib"
@@ -442,6 +448,7 @@ projects[views_rss_media][patch][] = "https://www.drupal.org/files/issues/strict
 ; Changing REQUIREMENT_ERROR to REQUIREMENT_WARNING so the installation of module will pass.
 projects[views_rss_media][patch][] = "https://www.drupal.org/files/issues/views_rss_media-2550589-1.patch"
 
+; TODO: Investigate if we can use a stable version instead.
 ; Development version where the "unpublished" status have been fixed on the content edit page.
 projects[view_unpublished][subdir] = "contrib"
 projects[view_unpublished][download][type] = "git"
@@ -457,6 +464,8 @@ projects[webform][version] = "4.24"
 projects[workbench][subdir] = "contrib"
 projects[workbench][version] = "1.2"
 
+; TODO: Investigate if we can use a stable version instead
+; and investigate: https://github.com/ding2/ding2/pull/389/commits/95523a97f9407aed69adbc43da3c2c59848f098d
 projects[workflow][subdir] = "contrib"
 projects[workflow][version] = "2.5"
 projects[workflow][patch][] = "http://www.drupal.org/files/issues/features_import-2484297-10.patch"
@@ -465,8 +474,14 @@ projects[workflow][patch][] = "https://www.drupal.org/files/issues/workflow-php_
 ; Add index to workflow_history to reduce query time, https://www.drupal.org/project/workflow/issues/2569801
 projects[workflow][patch][] = "https://www.drupal.org/files/issues/workflow-add_nid_index-2569801-3.patch"
 
+; Drush at CircleCI cannot find version 2.9.
+; Maybe because it was released today
+; and has not yet propagated everywhere?
+projects[wysiwyg][type] = "module"
 projects[wysiwyg][subdir] = "contrib"
-projects[wysiwyg][version] = "2.5"
+projects[wysiwyg][download][type] = "git"
+projects[wysiwyg][download][url] = "https://git.drupalcode.org/project/wysiwyg.git"
+projects[wysiwyg][download][tag] = "7.x-2.9"
 
 projects[ask_vopros][type] = "module"
 projects[ask_vopros][subdir] = "contrib"
