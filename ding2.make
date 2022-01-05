@@ -11,7 +11,7 @@ projects[admin_menu][subdir] = "contrib"
 projects[admin_menu][version] = "3.0-rc5"
 
 projects[admin_views][subdir] = "contrib"
-projects[admin_views][version] = "1.6"
+projects[admin_views][version] = "1.7"
 
 projects[antibot][subdir] = "contrib"
 projects[antibot][version] = "1.2"
@@ -76,7 +76,7 @@ projects[email][subdir] = "contrib"
 projects[email][version] = "1.3"
 
 projects[entity][subdir] = "contrib"
-projects[entity][version] = "1.8"
+projects[entity][version] = "1.10"
 
 projects[entitycache][subdir] = "contrib"
 projects[entitycache][version] = "1.2"
@@ -84,7 +84,7 @@ projects[entitycache][version] = "1.2"
 projects[entitycache][patch][0] = "http://drupal.org/files/issues/2146543-ensure-entity-inserts-clears-caches.1.patch"
 
 projects[entityreference][subdir] = "contrib"
-projects[entityreference][version] = "1.1"
+projects[entityreference][version] = "1.5"
 
 projects[entityreference_filter][subdir] = "contrib"
 projects[entityreference_filter][version] = "1.7"
@@ -194,7 +194,7 @@ projects[link][patch][] = "https://www.drupal.org/files/issues/link_module_displ
 
 projects[l10n_update][type] = "module"
 projects[l10n_update][subdir] = "contrib"
-projects[l10n_update][version] = "1.0"
+projects[l10n_update][version] = "1.2"
 
 projects[l10n_client][type] = "module"
 projects[l10n_client][subdir] = "contrib"
@@ -204,7 +204,7 @@ projects[l10n_client][version] = "1.3"
 projects[l10n_client][patch][] = "https://www.drupal.org/files/issues/l10n_client-browser_is_undefined_jquery_gt_19-2191771-3.patch"
 
 projects[i18n][subdir] = "contrib"
-projects[i18n][version] = "1.11"
+projects[i18n][version] = "1.31"
 
 projects[manualcrop][subdir] = "contrib"
 projects[manualcrop][version] = "1.6"
@@ -262,7 +262,7 @@ projects[mmeu][subdir] = "contrib"
 projects[mmeu][version] = "1.0"
 
 projects[module_filter][subdir] = "contrib"
-projects[module_filter][version] = "2.0"
+projects[module_filter][version] = "2.2"
 
 ; NanoSOAP is currently not placed in contrib at this was not the case
 ; when using recursive make files.
@@ -271,7 +271,7 @@ projects[nanosoap][version] = "1.0"
 projects[nanosoap][patch][] = "http://drupal.org/files/nanosoap-curloptions-1943732.patch"
 
 projects[nodequeue][subdir] = "contrib"
-projects[nodequeue][version] = "2.1"
+projects[nodequeue][version] = "2.2"
 
 projects[node_clone][subdir] = "contrib"
 projects[node_clone][version] = "1.0-rc2"
@@ -317,7 +317,6 @@ projects[panels][version] = "3.4"
 ; Fix PHP7 errors - PHP 4 style constructors - (https://www.drupal.org/node/2557061)
 projects[panels][patch][] = "https://www.drupal.org/files/issues/deprecated-constructor-in-php-7-2557061-3.patch"
 
-
 projects[panels_breadcrumbs][subdir] = "contrib"
 projects[panels_breadcrumbs][version] = "2.1"
 
@@ -344,7 +343,7 @@ projects[redirect][subdir] = "contrib"
 projects[redirect][version] = "1.0-rc3"
 
 projects[relation][subdir] = "contrib"
-projects[relation][version] = "1.0"
+projects[relation][version] = "1.2"
 
 projects[role_delegation][subdir] = "contrib"
 projects[role_delegation][version] = "1.1"
@@ -453,7 +452,7 @@ projects[watchdog_filtering][subdir] = "contrib"
 projects[watchdog_filtering][version] = "1.3"
 
 projects[webform][subdir] = "contrib"
-projects[webform][version] = "4.10"
+projects[webform][version] = "4.24"
 
 projects[workbench][subdir] = "contrib"
 projects[workbench][version] = "1.2"
