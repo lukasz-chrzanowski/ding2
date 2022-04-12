@@ -409,7 +409,7 @@ projects[tipsy][subdir] = "contrib"
 projects[tipsy][version] = "1.0-rc1"
 
 projects[token][subdir] = "contrib"
-projects[token][version] = "1.6"
+projects[token][version] = "1.9"
 
 projects[transliteration][subdir] = "contrib"
 projects[transliteration][version] = "3.2"
