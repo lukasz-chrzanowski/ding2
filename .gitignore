@@ -7,3 +7,4 @@ config.php
 tests/behat/.idea/
 .gitignore
 .history
+.idea
