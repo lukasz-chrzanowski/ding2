@@ -9,7 +9,7 @@ projects[drupal][patch][] = "https://www.drupal.org/files/issues/1232416-autocom
 projects[drupal][patch][] = "https://drupal.org/files/issues/translate_role_names-2205581-1.patch"
 projects[drupal][patch][] = "https://raw.githubusercontent.com/ding2/ding2/master/patches/drupal_core.robots.txt.ding2.patch"
 ; PHP 7.4 Fix notice
-projects[drupal][patch][] = "https://www.drupal.org/files/issues/2782809-4.patch"
+projects[drupal][patch][] = "https://raw.githubusercontent.com/lukasz-chrzanowski/ding2/php74/patches/3256149-php74-attributes-array.patch"
 
 ; Core
 projects[drupal][type] = webform
