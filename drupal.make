@@ -11,13 +11,13 @@ projects[drupal][patch][] = "https://raw.githubusercontent.com/ding2/ding2/maste
 ; PHP 7.4 Fix notice
 projects[drupal][patch][] = "https://www.drupal.org/files/issues/2782809-4.patch"
 
-; Webform
-projects[drupal][type] = webform
-; projects[drupal][version] = 7.x-4.x-dev
-projects[drupal][patch][] = "https://www.drupal.org/files/issues/2022-04-22/3256149-php74-attributes-array.patch"
-
 ; Get the profile, which will contain the next makefile.
 projects[ding2][type] = "profile"
 projects[ding2][download][type] = "git"
 projects[ding2][download][url] = "https://github.com/lukasz-chrzanowski/ding2.git"
 projects[ding2][download][branch] = "php74"
+
+; Webform
+projects[ding2][type] = "webform"
+; projects[drupal][version] = 7.x-4.x-dev
+projects[ding2][patch][] = "https://www.drupal.org/files/issues/2022-04-22/3256149-php74-attributes-array.patch"
